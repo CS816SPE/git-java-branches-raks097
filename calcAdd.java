@@ -12,6 +12,7 @@ public class calcAdd
 		{
 			System.out.println("1. ADD");
 			System.out.println("2. EXIT\n");
+			System.out.println("3. SUBRACT");
 			System.out.print("Enter Your Choice: " );
 			choice = scan.next().charAt(0);
 
@@ -22,6 +23,14 @@ public class calcAdd
 					a = scan.nextFloat();
 					b = scan.nextFloat();
 					res = a + b;
+					System.out.println("Result = "+res);
+					break;
+
+				case '3' :
+					System.out.print("Enter Two Number : ");
+					a = scan.nextFloat();
+					b = scan.nextFloat();
+					res = a * b;
 					System.out.println("Result = "+res);
 					break;
 
